@@ -1,12 +1,6 @@
-import json, os, logging, random
+import json, os, random
 from datetime import date
 from faker import Faker
-
-logging.basicConfig(filename='data.log', encoding='utf-8', level=logging.DEBUG, format='%(asctime)s %(message)s',
-                    datefmt='%m/%d/%Y %I:%M:%S %p')  # create log file
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-logger.addHandler(logging.StreamHandler())
 
 today = date.today()  # get today's date
 path = f"../Kafka/{today}"  # creates subfolder for journaled data per day
@@ -28,7 +22,7 @@ def get_name(number: int) -> str:  # creates a numbered json filename with lates
 
 
 def get_info(journal: dict) -> dict:
-    fake = Faker(locale='en_US')
+    fake = Faker()
     types = ["Basic", "Standard", "Family Package", "Premium", "Xtreme Premium",
              "Supreme", "Pay-As-Go", "Fixed Access", "Enterprise", "Supreme Plus"]
     for key in journal.keys():
@@ -46,9 +40,9 @@ def get_info(journal: dict) -> dict:
             case "cost":
                 journal[key] = random.randint(100, 2000)
             case "start_date":
-                journal[key] = fake.past_date
+                journal[key] = fake.date_this_decade().strftime('%Y-%m-%d')
             case "end_date":
-                journal[key] = fake.future_date
+                journal[key] = fake.future_date().strftime('%Y-%m-%d')
             case _:
                 logger.error("Invalid keys!")
                 exit(1)
@@ -61,8 +55,7 @@ def generate():
         file = get_name(n)
         data = get_info(customer)
         with open(f"{path}/{file}", "w", encoding="utf-8") as outfile:
-            outfile.write(json.dumps(data, indent=2))
-        print(get_name(n))
+            json.dump(data, outfile, indent=4)
 
 
 if __name__ == '__main__':
@@ -71,5 +64,5 @@ if __name__ == '__main__':
         generate()
 
     else:
-        logger.error("Path already exists and is a directory!")
+        print("Path already exists and is a directory!")
         exit(1)

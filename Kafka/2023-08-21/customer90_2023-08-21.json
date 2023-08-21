@@ -1,0 +1,10 @@
+{
+    "id": 3,
+    "active": true,
+    "subscription": "Fixed Access",
+    "customer_first_name": "Morgan",
+    "customer_last_name": "Smith",
+    "cost": 1559,
+    "start_date": "2023-06-17",
+    "end_date": "2023-09-06"
+}
