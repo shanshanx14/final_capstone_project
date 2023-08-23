@@ -1,0 +1,10 @@
+{
+    "id": 10,
+    "active": true,
+    "subscription": "Supreme",
+    "customer_first_name": "Amanda",
+    "customer_last_name": "Burns",
+    "cost": 1783,
+    "start_date": "2020-09-25",
+    "end_date": "2023-09-12"
+}
