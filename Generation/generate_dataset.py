@@ -1,4 +1,4 @@
-from hdfs.ext.kerberos import KerberosClient
+#from hdfs.ext.kerberos import KerberosClient
 import pyspark
 from pyspark.sql import SparkSession, DataFrame
 from pyspark.sql.functions import col, lit, create_map
@@ -7,7 +7,7 @@ import pyarrow.parquet as pq
 
 
 def createDF() -> DataFrame:
-    spark = SparkSession.builder.appName("parquetFile").getOrCreate()
+    spark = SparkSession.builder.master("local").appName("parquetFile").getOrCreate()
 
     data = [("Basic", 500, ("480p", "No", "Yes")),
             ("Standard", 1500, ("720p", "Yes", "Yes")),
@@ -44,7 +44,7 @@ def createDF() -> DataFrame:
 
 
 def write(df: DataFrame):
-    host = 'http:// 0.0.0.0'
+    """host = 'http:// 0.0.0.0'
     port = 9870
     my_client = KerberosClient(host + ":" + str(port))
 
@@ -54,7 +54,8 @@ def write(df: DataFrame):
 
     # remember we received the DataFrame and the filename as parameters
     with my_client.write(direct + filename, encoding='utf-8') as writer:
-        df.write.mode("overwrite").parquet(writer)
+        df.write.mode("overwrite").parquet(writer)"""
+    df.coalesce(1).write.parquet('hdfs://localhost:9870/subscriptions/dataset')
 
 
 def start():

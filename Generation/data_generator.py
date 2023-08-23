@@ -44,7 +44,7 @@ def get_info(journal: dict) -> dict:
             case "end_date":
                 journal[key] = fake.future_date().strftime('%Y-%m-%d')
             case _:
-                logger.error("Invalid keys!")
+                print("Invalid keys!")
                 exit(1)
 
     return journal
