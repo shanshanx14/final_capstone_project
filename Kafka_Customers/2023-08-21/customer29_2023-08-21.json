@@ -1,0 +1,10 @@
+{
+    "id": 108,
+    "active": true,
+    "subscription": "Pay-As-Go",
+    "customer_first_name": "Rachel",
+    "customer_last_name": "Richardson",
+    "cost": 153,
+    "start_date": "2020-12-27",
+    "end_date": "2023-09-15"
+}
