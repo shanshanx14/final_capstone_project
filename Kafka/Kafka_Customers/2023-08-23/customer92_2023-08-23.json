@@ -1,0 +1,10 @@
+{
+    "id": 24,
+    "active": false,
+    "subscription": "Basic",
+    "customer_first_name": "Jacqueline",
+    "customer_last_name": "Gordon",
+    "cost": 1255,
+    "start_date": "2020-11-18",
+    "end_date": "2023-09-09"
+}
