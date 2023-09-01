@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "kafka-datapipeline",
+  "private_key_id": "b2b8cce888469a8e9b7ebcbb03b078e7e7c48f2d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCyqpBBNmWFMuuA\n2zn/RvXk/D4rKM8HcELGsYsO1C2z1cQDcriEELN4DpOn8L1HYi2ZpQO41YfAviHS\nfRwED/FSXsHz5BvjUefGAbFvYGgWbKSXsf4dGKOwD4j4wAIYizTVW/OczlNmNyJ6\nY1A82ywSIK9WgFEhvjcPG0HKppUYBWw7oepJSAvWqhnT9Dc5MCrEbdWWG0BkCRHN\n9z8TbRodbQGngH0Wb6ZpOw7/K3yPbL/RNc4NRht9fszorussu2SeNJf+s7A0Vs7W\nV318QrHNcz/gqM4NSjgVdSTyPxYP/vFBMPeHTx09VnPn/qakK1L23q0kGPiQbCPH\nLCzcm7jNAgMBAAECggEARPRyL1D8tn80CCvUAvOSpHk7zzF1UZQgmYndNvBp4R3Q\nBFqq3wGJGn1ZvHe7vYilO8bFnHkA50EaUaAKh4DVrOo4ZdY0czPhxXhS0D7/fSQa\nFBfUkMs5JZKhVQvZ4zoavnu6FltFMc52ppCc35fhNu/ZbAOjDGha3KAy8LEBGt8b\nzMthWkRqC0830pfytKOCagfLfx/RpAbo/8aJo3D1v8X24GawQ5Pktu/EHOjivGC+\nbG07IWrJ0TygKeHaEKxFYUMTRgPwd3uNPCZdOv1qAK6rG0u53viauSELigC2zhGc\ndyph4KmuBFPKAFlykgzF6rnQjcuXNLT99x0+ToImewKBgQDaIxdEwGAsnhZBpz0S\nAqundPLpeDzX4i+Ohgeu7nEgTQ/NRKiL92yhHwd0TrN4X0cSKmjuQKs6elHbDHmb\n43zoahYGxh1/7LNhCZXLG6pyibg9jqHQovuZyKm0lOAUXQmtpxP5veQYhDotZAJa\n4d0qtw+ntuej+Scy56Ad67aK3wKBgQDRrZbbOJi4oG7uYJvn/8uZNljf2cKblIr/\nXWCL8Hg00B53jTXJ8HpkVaDq40RbPNbfLYWPUGtBpi7JryDcQ4RkQGG0q2d6wyrM\nJbxnlVMYIUvpOa64r3chp8LYJuBKm/F/pzjCJGlypiz6JRMgA+rb0wI8kMrfrZwb\nmUTCshQd0wKBgE4V6apuwv61yHnQCAh+dDwJnTr+E6mkCioWyIFSUaSicVmljkAs\nXfJ/TQfRdGVOlf5muBExjRnt14d2O8IV+QypjSD3om+8p6nA6KJAUQ+XRSCkAkDR\nVweB0V4XPO+NLn2/JWNtGk28Z6b/+efWmnlD9pKu4tTLx8BtMeAEFOA5AoGAYaUt\nc7nPpWtRPcHP2SLOdfNRQC3w6vMqJ/IcXA8Ia8/f4Fzqh7htxvv5jGl6E+MpTZWt\ndShGSrRRZasg6nKm3Oj+l1ybPBhXfeq06qgnoj0fVOV/8JIGMK4nlvHD0fr9ZC1D\nyWWblcC9gWByn54zaVvC1uG3GKOI53FhDCpSI/ECgYEAwTVZGSKMNzyR3oJBDVJA\np6gZuuQqgvaFV2BptaXrfXX4Bv4c0SLPtoqdGtWNiUZ/dMbilej78BgT2Wc+oQ09\nNraz1YiITTkPQQ/YlULrsi4lQLKeGWfb9Q1jqyjBaWoBJ3vE6tSmqqnl4QDllaKk\nXjyTcBYoo4mTPe20X2C4pBg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloud-storage-sa@kafka-datapipeline.iam.gserviceaccount.com",
+  "client_id": "100153318635913512422",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-storage-sa%40kafka-datapipeline.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
