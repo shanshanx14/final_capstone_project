@@ -38,14 +38,8 @@ def create_df() -> DataFrame:
 
 def start():
     dataframe = create_df()  # get subscription dataframe
-    dataframe.write.save('../Kafka_Subscriptions', format="parquet")  # save subscription dataframe as parquet file
-    """client = storage.Client.from_service_account_json(json_credentials_path=path_to_private_key)
-
-# The bucket on GCS in which to write the CSV file
-bucket = client.bucket('test-bucket-skytowner')
-# The name assigned to the CSV file on GCS
-blob = bucket.blob('my_data.csv')
-blob.upload_from_string(df.to_csv(), 'text/csv')"""
+    dataframe.write.parquet('../Kafka_Subscriptions.parquet')  # save subscription dataframe as parquet file
+    dataframe.show()
 
 
 if __name__ == '__main__':
